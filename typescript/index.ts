@@ -1,14 +1,14 @@
 const twoSum = (nums: number[], target: number): number[] | undefined => {
-  const map = new Map();
+  const map = new Map()
   for (let i = 0; i <= nums.length; i++) {
-    const matchedValue = target - nums[i]; // Computed the matched value and try to find it in the Map.
+    const matchedValue = target - nums[i] // Computed the matched value and try to find it in the Map.
     if (map.has(matchedValue)) {
       // If found, return the index of the matched value and the current index.
-      return [map.get(matchedValue), i];
+      return [map.get(matchedValue), i]
     } else {
       // If not found, add the current value and index to the Map.
-      map.set(nums[i], i);
+      map.set(nums[i], i)
     }
   }
-};
-console.log(twoSum([2, 7, 11, 15], 9)); // expected: [0, 1]
+}
+console.log(twoSum([2, 7, 11, 15], 9)) // expected: [0, 1]
