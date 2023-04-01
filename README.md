@@ -1,3 +1,3 @@
-# web-learn
+# Web Learn Playground
 
-A repo to record daily learning.
+A repo to record daily learning and different demos.
